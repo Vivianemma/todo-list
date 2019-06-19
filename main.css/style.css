@@ -1,0 +1,131 @@
+body{
+    margin: 0;
+    padding:0;
+    font-family: sans-serif;
+}
+
+.container{
+   width: 100%;
+   margin: 0 auto;
+}
+/* nav{
+    position: fixed;
+    width: 100%;
+    height:80px;
+    box-sizing: border-box;
+    transition: .5s;
+    top: 0;
+    left: 0;
+} */
+.header{
+    background-image:url("../images/11.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 200px;
+    width: 100%;
+
+}
+nav.black{
+    background: hsla(199, 100%, 50%, 0.589);
+}
+ul{
+    float: right;
+    display: flex;
+    margin:0;
+    padding: 0;
+}
+nav ul li{
+    list-style: none;
+}
+.fa-sync-alt{
+    color: rgb(179, 123, 3);
+    font-size: 40px;
+    background-color: none;
+}
+nav ul li a{
+    text-decoration: none;
+    line-height: 80px;
+    padding: 5px 20px;
+    transition: .5s;
+}
+/* nav ul li a.active, 
+nav ul li a:hover{
+    background-color: #fff;
+} */
+.clear i:hover{
+    cursor: pointer;
+    text-shadow: 1px 3px 5px #000;
+    transform: rotate(45deg);
+}
+#data{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: #fff;
+    font-size: 25px;
+    font-family: sans-serif;
+}
+.content::-webkit-scrollbar{
+    display: nono;
+}
+.content ul{
+    padding:0;
+    margin: 0;
+}
+/* .item{
+    width: 380px;
+    height: 45px;
+    min-height: 45px;
+    position: relative;
+    border-bottom: 1px solid;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.item i.co{
+    position: absolute;
+    font-size: 25px;
+    padding-left: 5px;
+} */
+.content{
+    width: 380px;
+    height: 350px;
+    max-height: 350px;
+    background-color: #fff;
+    overflow: auto;
+}
+.item i.de:hover{
+    color: #af0000;
+    cursor: pointer;
+}
+
+.add-to-do{
+    position: relative;
+    width: 360px;
+    height: 40px;
+    background-color: #fff;
+    padding: 10px;
+    border-top: 1px solid rgb(0, 0, 0, 0.1);
+}
+.add-to-do i{
+    position: absolute;
+    font-size: 40px;
+    color: #4162f6;
+}
+.add-to-do input{
+    position: absolute;
+    left: 50px;
+}
+.add-to-do input::-moz-input-placeholder{
+    color: #4162f6;
+    font-size: 20px;
+}
+.add-to-do input:-ms-input-placeholder{
+    color: #4162f6;
+    font-size: 20px;
+}
+.add-to-do input:-moz-input-placeholder{
+    color: #4162f6;
+    font-size: 20px;
+}

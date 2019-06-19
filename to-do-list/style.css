@@ -1,0 +1,114 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  --background-color: #efefef;
+  --secondary-color: #777777;
+  --secondary-text-color: #ffffff;
+  --text-color: #212121;
+  color: var(--text-color);
+  background-color: var(--background-color);
+}
+
+.todo {
+  display: flex;
+  -webkit-display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 50px;
+}
+
+input {
+  background-color: var(--background-color);
+  outline: none;
+  border: none;
+  border-bottom: 1px solid var(--secondary-color);
+  padding: 8px;
+  font-size: 20px;
+}
+
+input[type=checkbox] {
+  
+}
+
+#button {
+  border: none;
+  outline: none;
+  box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.15);
+  background-color: #02A4D3;
+  padding: 8px;
+  font-size: 20px;
+  border-radius: 8px;
+  margin: 0 5px;
+  color: var(--secondary-text-color);
+  width: 100px;
+}
+#todo li {
+  list-style: none;
+  margin: 5px auto;
+  font-size: 24px;
+  width: 50%;
+  display: flex;
+  --webkit-display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px dotted var(--secondary-color);
+}
+#todo li.completed {
+  text-decoration: line-through;
+  color: var(--secondary-color);
+}
+
+#todo li.uncompleted {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+#todo li button {
+  outline: none;
+  border: none;
+  border-radius: 50%;
+  margin: 10px;
+  background-color: var(--secondary-color);
+  color: var(--secondary-text-color);
+  padding: 8px;
+}
+
+nav{
+    position: fixed;
+    width: 100%;
+    height:80px;
+    box-sizing: border-box;
+    transition: .5s;
+    top: 0;
+    left: 0;
+}
+
+nav.black{
+  background: hsla(199, 100%, 50%, 0.589);
+}
+ul{
+  float: right;
+  display: flex;
+  margin:0;
+  padding: 0;
+}
+nav ul li{
+  list-style: none;
+}
+.fa-sync-alt{
+  color: rgb(179, 123, 3);
+  font-size: 40px;
+  background-color: none;
+}
+nav ul li a{
+  text-decoration: none;
+  line-height: 80px;
+  padding: 5px 20px;
+  transition: .5s;
+}
+nav ul li a.active, 
+nav ul li a:hover{
+  background-color: #fff;
+}
